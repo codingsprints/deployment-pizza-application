@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: order-container
-          image: codingsprints/mern-space-order-service-prod:build-2
+          image: codingsprints/mern-space-order-service-prod:build-3
           ports:
             - containerPort: 5003
           volumeMounts:
