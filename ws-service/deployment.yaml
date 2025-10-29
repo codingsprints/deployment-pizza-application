@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: ws-container
-          image: codersgyan/mernspace-c-ws-service:build-1
+          image: codersgyan/mernspace-c-ws-service:build-3
           ports:
             - containerPort: 5004
           volumeMounts:
