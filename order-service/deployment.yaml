@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: order-container
-          image: codersgyan/mernspace-c-order-service:build-8
+          image: codingsprints/mern-space-order-service-prod:build-2
           ports:
-            - containerPort: 5503
+            - containerPort: 5003
           volumeMounts:
             - name: order-secret
               mountPath: "/home/node/app/config"
@@ -38,7 +38,5 @@ spec:
     app: order-service
   ports:
     - protocol: TCP
-      port: 5503
-      targetPort: 5503
-
-
+      port: 5003
+      targetPort: 5003
