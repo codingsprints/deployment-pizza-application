@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: notification-container
-          image: codingsprints/mern-space-notification-service-prod:build-3
+          image: codingsprints/mern-space-notification-service-prod:build-2
           ports:
             - containerPort: 5005
           volumeMounts:
