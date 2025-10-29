@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: ws-container
-          image: codersgyan/mernspace-c-ws-service:build-9
+          image: codersgyan/mernspace-c-ws-service:build-1
           ports:
-            - containerPort: 5504
+            - containerPort: 5004
           volumeMounts:
             - name: ws-secret
               mountPath: "/home/node/app/config"
@@ -38,7 +38,5 @@ spec:
     app: ws-service
   ports:
     - protocol: TCP
-      port: 5504
-      targetPort: 5504
-
-
+      port: 5004
+      targetPort: 5004
