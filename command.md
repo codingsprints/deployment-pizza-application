@@ -76,4 +76,6 @@ kubectl get endpoints
 kubectl apply -f .\catalog-secret.yaml
 
 kubectl apply -f ./deployment.yaml
+
+kubectl apply -f .\order-secret.yaml
 ```
