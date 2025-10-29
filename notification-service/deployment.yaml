@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: notification-container
-          image: codersgyan/mernspace-c-notification-service:build-2
+          image: codingsprints/mern-space-notification-service-prod:build-2
           ports:
-            - containerPort: 5505
+            - containerPort: 5005
           volumeMounts:
             - name: notification-secret
               mountPath: "/home/node/app/config"
@@ -38,7 +38,5 @@ spec:
     app: notification-service
   ports:
     - protocol: TCP
-      port: 5505
-      targetPort: 5505
-
-
+      port: 5005
+      targetPort: 5005
