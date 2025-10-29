@@ -65,4 +65,15 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 kubectl get pods -n argocd
 
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+kubectl get endpoints
+```
+
+## catalog-service
+
+```bash
+kubectl apply -f .\catalog-secret.yaml
+
+kubectl apply -f ./deployment.yaml
 ```
