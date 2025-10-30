@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: catalog-container
-          image: codingsprints/mern-space-catalog-service-prod:build-5
+          image: codingsprints/mern-space-catalog-service-prod:build-6
           ports:
             - containerPort: 5002
           volumeMounts:
