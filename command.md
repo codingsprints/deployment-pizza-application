@@ -40,6 +40,8 @@ kubectl get nodes -o wide
 kubectl get pod -o wide
 
 kubectl delete -f ./deployment.yaml
+
+kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 
 - note: 'Network load balancer' same as 'application load balancer'
