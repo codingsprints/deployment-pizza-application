@@ -4,13 +4,15 @@ metadata:
   name: auth-jwks
 data:
   jwks.json: |
-      {
-        "keys": [
-          {
-              "kty": "RSA",
-              "use": "sig",
-              "n": "AI_q0Dv6aCTbJfpJASRAuTnL_PqgrV1-LM3g5cmi9aXE8j0TjGn_WFaBWTZb14sn-K00JP9OKF3-_hJPSyBha6vPw8Brc7wrymQva3BI4qe8RyinLjUPQIpnkgQEYIrE56L0KJB-zBWVGqzp3Fr1MrN9wop_f4fvR7OIUt_peA-6wVE-8e1Pu7MAb62McA29Sw6z3dgH-kEdd-r4Sh8oIpdW8nVuVjdnmm3vQNZkR4qoMDQqynOSLRWlsNffmVqHBA2MGzjXiJri-m1EECjknndqpeZQjxdOZAgMz8eD-rLwTKhjn9qzFr8N_OE5zXJB-5npJatJ5cAZr1Uiwab5IDU",
-              "e": "AQAB"
-          }
-        ]
-      }
+    {
+      "keys": [
+        {
+          "kty": "RSA",
+          "use": "sig",
+          "alg": "RS256",
+          "n": "AKX1fS7bPhIFdcxFfTXv_HT1n6z26ir2XiTpdQZrGCu8E0KJrB_Q3fv9X1FIaPst2HONt4pNGCVQ6Q_1_AEDQhz9x_fEV3cMTCL3dxrOseSM5j3lGoXkXQE4S1NfhCwO6NnoW9Pf49p7b0_8XLqf1BZzT2R92YIXGXoU8IPDH0cy4Z89ZmHJsCTuIaSAR6LfCaj1AmJ52FgjbDGDgrdVQdjvou9nXAWsPeA9plmvrrq-5qPtkh6D-o829frxUiKuF41EGfkDgaJIbTgTf83DKcyuUDLruJp3WcHfuzk8yQPKi6Hav5mO0RSyTYMfUKDaAI32JR9Hti8_UVyurV6I2M0",
+          "e": "AQAB",
+          "kid": "56514dda44"
+        }
+      ]
+    }

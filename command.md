@@ -22,7 +22,7 @@ kubectl get pod -o wide
 <!-- # deployment auth service -->
 
 ```bash
-kubectl apply -f ./api-env-secert.yaml
+kubectl apply -f ./auth-env-secret.yaml
 
 kubectl apply -f ./auth-private-key-secret.yaml
 

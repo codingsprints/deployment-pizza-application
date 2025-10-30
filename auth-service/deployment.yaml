@@ -16,29 +16,29 @@ spec:
     spec:
       containers:
         - name: auth-container
-          image: codingsprints/mern-space-auth-service-prod:build-22
+          image: codingsprints/mern-space-auth-service-prod:build-23
           ports:
             - containerPort: 5001
           # envFrom:
           #   - secretRef:
           #       name: auth-env-secret
           volumeMounts:
-            # - name: auth-jwks
-            #   mountPath: "/home/node/app/public/.well-known"
-            #   readOnly: true
-            # - name: private-key
-            #   mountPath: "/home/node/app/certs"
-            #   readOnly: true
+            - name: auth-jwks
+              mountPath: "/home/node/app/public/.well-known"
+              readOnly: true
+            - name: private-key
+              mountPath: "/home/node/app/certs"
+              readOnly: true
             - name: environment
               mountPath: "/home/node/app/.env.production"
               subPath: ".env.production"
       volumes:
-        # - name: auth-jwks
-        #   configMap:
-        #     name: auth-jwks
-        # - name: private-key
-        #   secret:
-        #     secretName: auth-private-key
+        - name: auth-jwks
+          configMap:
+            name: auth-jwks
+        - name: private-key
+          secret:
+            secretName: auth-private-key
         - name: environment
           secret:
             secretName: auth-env-secret
