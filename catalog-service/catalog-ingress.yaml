@@ -6,14 +6,13 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/cors-allow-methods: "PUT, PATCH, GET, POST, OPTIONS, HEAD"
-    nginx.ingress.kubernetes.io/cors-allow-origin: "https://admin.codingsprints.com, https://codingsprints.com"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://admin.codingsprints.com, https://admin.codingsprints.com"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
-    # nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: nginx
   rules:
-    - host: api.codingsprints.com
-      http:
+    - http:
         paths:
           - path: /pizza/catalog/api/v1(/|$)(.*)
             pathType: ImplementationSpecific
