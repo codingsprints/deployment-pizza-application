@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: auth-container
-          image: codingsprints/mern-space-auth-service-prod:build-24
+          image: codingsprints/mern-space-auth-service-prod:build-25
           ports:
             - containerPort: 5001
           # envFrom:
